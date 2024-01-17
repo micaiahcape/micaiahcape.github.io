@@ -1,26 +1,23 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Micaiah Cape",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
+    "picture": "https://github.com/micaiahcape.png",
+    "email": "mcape@hawaii.edu",
+    "phone": "808-489-2592",
+    "website": "https://micaiahcape.github.io",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring 2026.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      { "network": "github", "username": "micaiahcape", "url": "http://github.com/micaiahcape" },
+      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/infigral" },
+      { "network": "instagram", "username": "notmicaiah_26", "url": "http://instagram.com/notmicaiah_26" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Full Stack Development" },
+    { "name": "Bioinformatics" },
+    { "name": "Digital Health" },
   ],
   "skills": [
     {
