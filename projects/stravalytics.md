@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/stravalytics.png
-title: "Stravalytics"
+title: "Stravalytics (In Progress)"
 date: 2023-09-01
 published: true
 labels:
