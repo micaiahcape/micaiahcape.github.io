@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "var essayTitle = "Still Thinking...";"
+title: "var essayTitle = 'Still Thinking...';"
 # All dates must be YYYY-MM-DD format!
 date: 2024-01-17
 published: true
