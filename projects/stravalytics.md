@@ -17,14 +17,14 @@ Stravalytics is a web application that I built where users can analyze their run
 You can view the site here: [stravalytics.cyclic.cloud](https://stravalytics.cyclic.cloud/)
 
 ## Stravalytics currently has the following visualizations:
-<img class="img-fluid" src="../img/stravalytics.png">
- - Histograms that sort your activities by pace, elevation gain, distance, and uptime.
+<img class="img-fluid" width = "30%" src="../img/stravalytics.png">
+Histograms that sort your activities by pace, elevation gain, distance, and uptime.
    
-<img class="img-fluid" src="../img/stravalytics_scatter.png">
- - An interactive scatterplot that allows you to analyze relationship between many different variables, such as cadence, stride length, distance, heart rate, elevation gain, etc...
+<img class="img-fluid" width = "30%" src="../img/stravalytics_scatter.png">
+An interactive scatterplot that allows you to analyze relationship between many different variables, such as cadence, stride length, distance, heart rate, elevation gain, etc...
 
-<img class="img-fluid" src="../img/stravalytics_line.png">
- - Totals, averages, and moving averages of most run statistics, visualized by line graphs!
+<img class="img-fluid" width = "30%" src="../img/stravalytics_line.png">
+Totals, averages, and moving averages of most run statistics, visualized by line graphs!
 
  - Analyzing a single week, month, or year's worth of activities in detail (coming soon)
 
