@@ -26,10 +26,8 @@ More specifically, users can download the mp3, MIDI, the MuseScore file (to edit
 While creating this site, I learned the basics of React.js to build the UI, and was able to implement what I learned about basic backend development from [FreeCodeCamp](https://freecodecamp.org). All songs' info are stored in a MongoDB database, and I was successfully able to design a simple API using Express.js to retrieve the proper requested songs from the database. I ran into many different issues (such as linking frontend to backend, CORS headers, jittery React hooks, deployment), however this was an extremely valuable learning experience for me and I've figured out that fullstack development was my interest.
 
 <img class="img-fluid" width = "30%" src="../img/pitchkeys_mongodb.png">
-<br><br>
 MongoDB document.
 <br><br>
 <img class="img-fluid" width = "30%" src="../img/pitchkeys_find.png">
-<br><br>
 Song search page.
 <br><br>
