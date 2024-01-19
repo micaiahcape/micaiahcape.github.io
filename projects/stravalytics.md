@@ -16,6 +16,9 @@ Stravalytics is a web application that I built where users can analyze their run
 
 You can view the site here: [stravalytics.cyclic.cloud](https://stravalytics.cyclic.cloud/)
 
+## How it works
+A user connects their Strava account, and a call is made to the Strava API to retrieve all their activities. Once a user connects their Strava account, LocalStorage and MongoDB is used to keep them "logged in" to prevent them from having to connect their Strava account again (unless they decide to "logout" and disconnect it). When the API returns back the data, it is sorted and displayed in many different visualizations. Users can tinker with the numbers, such as displaying different variables, filtering displayed activities out by date, or chnaging the zoom on the visualizations.
+
 ## Stravalytics currently has the following visualizations:
 <img class="img-fluid" width = "30%" src="../img/stravalytics.png">
 * Histograms that sort your activities by pace, elevation gain, distance, and uptime.
