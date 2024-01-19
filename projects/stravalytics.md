@@ -27,6 +27,12 @@ You can view the site here: [stravalytics.cyclic.cloud](https://stravalytics.cyc
 * Totals, averages, and moving averages of most run statistics, visualized by line graphs!
 <br><br>
 
-Analyzing a single week, month, or year's worth of activities in detail (coming soon)
+* Analyzing a single week, month, or year's worth of activities in detail (coming soon)
+
+## Challenges
+* As the UI got more complicated, there were more graphs to render upon every refresh (especially the anychart.js line graphs take a relatively long time to render compared to using the DOM.) I'm still working on resolving this issue - on a laptop it can take up to only 1 second to re-render the whole UI; however on lowend devices like my phone it takes up to 4 seconds, which is very noticable.
+* Integrating the Strava API into my application. Documentation online was limited and was confusing to some degree, which forced me to look up YouTube tutorials on how to do it. After several nights, I as finally able to make the first Strava API call using this application. A few more nights of tinkering and I successfully was able to make it so that all users can connect their Strava account and view their statistics.
+* Deployment. I used [Cyclic.sh](cyclic.sh), which is a free, quick hosting service. This was the very first time both my API and my frontend were in a single project (the previously mentioned [PitchKeys website](https://pitchkeys.github.io) actually used an external API that I deployed separately). Thus, I needed to work around a lot of error messages during deployment.
+
 
 
