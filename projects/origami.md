@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/creases.png
+image: img/creases.jpg
 title: "The Origamitician"
 date: 2022-01-01
 published: true
@@ -23,15 +23,15 @@ You can view the site here: [origamitician.github.io](https://origamitician.gith
 
 I used Inkscape, a drawing software, to create the instruction diagrams. Here are some of the models I'm the most proud of:
 
-<img width = "30%" src="../img/origami.jpg">
+<img width = "30%" src="../img/origami.jpg"><br>
 Similar to the **Landspeeder** in **Star Wars**.
 <br><br>
-<img width = "30%" src="../img/plant2.jpg">
+<img width = "30%" src="../img/plant2.jpg"><br>
 Flower
 <br><br>
-<img width = "30%" src="../img/fv9.jpg">
+<img width = "30%" src="../img/fv9.jpg"><br>
 Another hovering vehicle.
 <br><br>
-<img width = "30%" src="../img/shrimp.jpg">
+<img width = "30%" src="../img/shrimp.jpg"><br>
 Shrimp
 <br><br>
