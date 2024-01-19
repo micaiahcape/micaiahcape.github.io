@@ -61,7 +61,7 @@
       "website": "hawaiidigitalhealthlab.com",
       "startDate": "2023-05-15",
       "endDate": "2023-08-11",
-      "summary": "Created a web-based platform to aid in an NIH grant research project (project number 1DP2EB035858-01, $1.3m): using diagnose developmental delays in adolescents from digital social interactions.",
+      "summary": "Created a web-based platform to aid in an NIH grant research project (project number 1DP2EB035858-01, $1.3m): using crowd-powered machine learning to diagnose developmental delays in adolescents from digital social interactions.",
       "highlights": [
         "Used the Meteor.js framework to create a responsive website that hosts multiplayer games that users can interact with through the webcam.",
         "Created multiplayer real-time video games using the HTML5 canvas.",
