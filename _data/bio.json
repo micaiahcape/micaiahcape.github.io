@@ -22,11 +22,11 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "JavaScript", "Node.js", "React.js", "MongoDB", "C/C++"];
+      "keywords": [ "JavaScript", "Node.js", "React.js", "MongoDB", "C/C++"]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": ["Unix", "GitHub", "Windows"];
+      "keywords": ["Unix", "GitHub", "Windows"]
     }
   ],
   "education": [
