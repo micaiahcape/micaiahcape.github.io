@@ -14,7 +14,7 @@ summary: "A project made just for fun. Uses DOM manipulation to clone fake virus
 
 <img class="img-fluid" width = "25%" src="../img/virus.png">
 
-This is a project made for fun to for some trolling. **~~Pro Tip: SET YOUR VOLUME TO MAX!!!~~** I accept no responsibility for any blown-out speakers (or eardrums).
+This is a project made for fun to for some trolling and to test the capabilities of JavaScript DOM to be able to clone a lot of "virus windows".
 
 You can view the site here: [origamitician.github.io/notavirus1](https://origamitician.github.io/)
 
