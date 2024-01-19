@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/pitchkeys.jpg
+image: img/pitchkeyslogo.jpg
 title: "Pitchkeys Official Website"
 date: 2023-03-01
 published: true
