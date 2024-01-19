@@ -17,7 +17,7 @@ My interests in software engineering.
 
 “If you want to play more, create your own games and play them.” What my mom just said was a catalyst that would launch me into an entirely new hobby I’ve never considered. From that day on, I started to tinker with Scratch, a block-based programming language. My journey with Scratch itself is a long story of its own, but after about a year, I was curious about real-world programming. Sure, Scratch was great as it was super simple, but as I moved onto more complicated projects, Scratch had its limitations. 
 
-<img class="img-fluid" width = "30%" src="../img/split.png">
+<img width = "30%" src="../img/split.png">
 _An implementation of the JavaScript `split()` function in Scratch. As you can see, something that can be done in a single command in JavaScript took many blocks to achieve in Scratch._<br><br>
 
 That was when I decided to shift to website development, and I started by taking DevLeague’s basic software engineering class. This class covered introductory HTML, CSS, and JavaScript, and covered enough material for me to be able to create a fully functional static web application by the end of the course. This was indeed much more satisfying than coding video games on Scratch, as I knew that people could view these web applications.
