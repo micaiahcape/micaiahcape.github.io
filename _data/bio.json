@@ -4,13 +4,13 @@
     "label": "Student",
     "picture": "https://github.com/micaiahcape.png",
     "email": "mcape@hawaii.edu",
-    "phone": "808-489-2592",
+    "phone": "808-888-8888",
     "website": "https://micaiahcape.github.io",
     "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring 2026.",
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "micaiahcape", "url": "http://github.com/micaiahcape" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/infigral" },
+      { "network": "linkedin", "username": "Micaiah Cape", "url": "http://linkedin.com/in/infigral" },
       { "network": "instagram", "username": "notmicaiah_26", "url": "http://instagram.com/notmicaiah_26" }
     ]
   },
@@ -22,89 +22,121 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "keywords": [ "JavaScript", "Node.js", "React.js", "MongoDB", "C/C++"];
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "keywords": ["Unix", "GitHub", "Windows"];
     }
   ],
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Science (expected Spring, 20126)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2022-08-12",
       "endDate": "Present",
       "courses": [
+        "ICS 212",
+        "ICS 311",
       ]
     }
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "UH Manoa John A. Burns School of Medicine",
+      "position": "Web Designer",
       "website": "",
-      "startDate": "2015-08-01",
+      "startDate": "2023-10-01",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Migrating website content for the Department of Medicine.",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Migrating the content of the Department of Medicine’s website from WordPress (platform it is currently hosted on) to Cascade (new platform)."
+        "Templated custom HTML and CSS if needed".
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
+      "company": "Hawaii Digital Health Lab",
+      "position": "Web Developer Intern",
+      "website": "hawaiidigitalhealthlab.com",
+      "startDate": "2023-05-15",
+      "endDate": "2023-08-11",
+      "summary": "Created a web-based platform to aid in an NIH grant research project (project number 1DP2EB035858-01, $1.3m): using diagnose developmental delays in adolescents from digital social interactions.",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Used the Meteor.js framework to create a responsive website that hosts multiplayer games that users can interact with through the webcam.",
+        "Created multiplayer real-time video games using the HTML5 canvas.",
+        "Created social features on the website, such as a friending system.",
+      ]
+    },
+    {
+      "company": "UH Manoa, Department of Natural Resources & Environmental Management (NREM)",
+      "position": "Office Assistant",
+      "website": "",
+      "startDate": "2022-08-12",
+      "endDate": "Present",
+      "summary": "Assisted the NREM office with various departmental tasks.",
+      "highlights": [
+        "Processed and sorted graduate school applications, ran errands, answered phones, and replyed to and forwarded emails.",
+        "Assisted the head of the NREM department (Dr. Tomoaki Miura) with the programming aspects of his research projects. Primarily wrote shell scripts in Bash to sort massive amounts of files that will be used for the research projects.",
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "John A. Burns School of Medicine, Department of Psychiatry",
+      "website": "",
+      "position": "Research Assistant",
+      "startDate": "2020-08-01",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "Conducted background research on substance use disorder. Published in scientific peer-reviewed journal articles and presented poster abstracts at local conferences.",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "Kiyokawa M, Kwon AK, Cape M, Streltzer JM. Kratom use disorder: case reports on successful treatment with home induction of buprenorphine-naloxone. Family Practice, 40(4), 596–598. doi: 10.1093/fampra/cmad081 (22.5% effort)",
+        "Cape M, Kiyokawa M, Haning W. Astronomical Use of Nitrous Oxide Associated with Stress From the COVID-19 Pandemic and Lockdown. The Primary Care Companion for CNS Disorders. doi: 10.4088/PCC.21cr03022. (45% effort)",
+        "Cape M, Kiyokawa M, Haning W. Olfactory Hallucination Associated With Benzodiazepine Withdrawal. Hawaii Addictions Conference, Online."
       ]
     },
     {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "organization": "Olivet Baptist Church",
+      "website": "https://www.olivetbaptist.org/",
+      "position": "Food Pantry Volunteer",
+      "startDate": "2022",
+      "endDate": "Present",
+      "summary": "Helped to sort & distribute bags of food at my church. 3-hour monthly event.",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+      ]
+    },
+    {
+      "organization": "Olivet Baptist Church",
+      "website": "https://www.olivetbaptist.org/",
+      "position": "Worship Team Member",
+      "startDate": "2017",
+      "endDate": "Present",
+      "summary": "practiced weekly and performed at the church average once every month.",
+      "highlights": [
+        "Ukulele player", 
+        "Singer",
+        "Keyboard player"
       ]
     }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "Regents Scholarship",
+      "date": "2022-2026",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "A full-ride scholarship offered to Hawaii residents for 4 years. Awarded to support students with a record of outstanding academic achievement."
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "Dean's List",
+      "date": "2022-2024",
+      "awarder": "University of Hawaii at Manoa",
+      "summary": "Awarded to those who have accumulated a 3.5 GPA that semester. I was awarded every semester since admission."
+    },
+    {
+      "title": "Valedictorian (class of 115)",
+      "date": "2022",
+      "awarder": "Maryknoll High School",
+      "summary": "Awarded to the person with the highest GPA out of the 2022 graduating class."
     }
   ],
   "references": [
