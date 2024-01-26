@@ -23,7 +23,64 @@ More specifically, users can download the mp3, MIDI, the MuseScore file (to edit
 
 ## Technical Details
 
-While creating this site, I learned the basics of React.js to build the UI, and was able to implement what I learned about basic backend development from [FreeCodeCamp](https://freecodecamp.org). All songs' info are stored in a MongoDB database, and I was successfully able to design a simple API using Express.js to retrieve the proper requested songs from the database. I ran into many different issues (such as linking frontend to backend, CORS headers, jittery React hooks, deployment), however this was an extremely valuable learning experience for me and I've figured out that fullstack development was my interest.
+While creating this site, I learned the basics of React.js to build the UI, and was able to implement what I learned about basic backend development from [FreeCodeCamp](https://freecodecamp.org). All songs' info are stored in a MongoDB database, and I was successfully able to design a simple API using Express.js to retrieve the proper requested songs from the database. 
+
+Sample API call in Express.js
+```
+app.post('/api/songs/:link/add', (req, res) => {
+    Songs.findOneAndUpdate({generatedLink: "/" + req.params.link}, req.body, {returnOriginal: false}, (err, data) => {
+        res.header('Access-Control-Allow-Origin', '*');
+        res.send(data);
+    })
+})
+```
+
+MongoDB Schema for one song.
+```
+const song = new mongoose.Schema({
+    songname: String,
+    date: Number,
+    desc: String,
+    duration: Number,
+    bpm: Number,
+    notecount: Number,
+    filters: String,
+    keywords: [String],
+    generatedLink: String,
+    credits: {
+        link: [String],
+        textToDisplay: String,
+    },
+
+    download: {
+        audioLink: String,
+        midiLink: String,
+        msczLink: String,
+        ytLink: String,
+        sheetMusic: String,
+        coverImage: String,
+    },
+
+    stats: {
+        ratings: [String],
+        midiDownloads: Number,
+        mp3Downloads: Number,
+        msczDownloads: Number,
+        pdfDownloads: Number,
+        visits: Number,  
+    },
+})
+```
+
+I've mentioned above that users can sort and filter songs by criteria. There were "simple" criteria that could be filtered out via the MongoDB document directly by using a basic query, such as song name, date, number of notes, or bpm. On the other hand, there were "complex" criteria that needed further processing from MongoDB, such as total number of downloads (computed from summing the `midiDownloads`, `mp3Downloads`, `msczDownloads`, `pdfDownloads` fields), the average ratings (computed from averaging the ratings in the `ratings` field), or keywords (where users can type into a search bar, and an algorithm matches how close the query is to the list of keywords in the document, and returns them sorted by similarity).
+
+The "simple" criteria were processed by directly filtering the documents out using MongoDB's built-in filtering commands, such as 
+`Songs.find({notecount: {$gte: 400, $lte: 10000}, () => {...});`
+This allowed processing & filtering to happen on the backend, and once the data was recieved on the frontend, no more processing was needed.
+
+On the other hand, the "complex" criteria were processed by obtaining the entire MongoDB database via single API call, and processing it on the frontend (due to need for computation). No processing occurred in the backend. 
+
+## Images
 
 <img width = "30%" src="../img/pitchkeys_mongodb.png">
 MongoDB document.
