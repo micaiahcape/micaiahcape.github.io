@@ -21,7 +21,7 @@ You can view the site here: [origamitician.github.io](https://origamitician.gith
 
 ## Technical details
 
-Before creating, I've realized that a lot of the code was going to be repetitive. Because every "subpage" (which was an individual page for my instructions) was going to be the same layout for every model, I had to think. Creating a new file and copying and pasting template HTML into that file was going to be a nightmare as if I wanted to change the layout of one page, I'd have to do this for however many subpages I created. This was made prior to knowing React, so I came up with an alternate solution: create a single JavaScript file `listOfSubpages.js` and create an array of objects. Each object contained relevant data for each model. For example, this was one object:
+Before creating, I've realized that a lot of the code was going to be repetitive. Because every "subpage" (which was an individual page for my instructions) was going to be the same layout for every model, I had to think. Creating a new file and copying and pasting template HTML into that file was going to be a nightmare as if I wanted to change the layout of one page, I'd have to do this for however many subpages I created. This was made prior to knowing React, so I came up with an alternate solution: create a single JavaScript file `listOfSubpages.js` and create an array of objects. Each object contained relevant data for each model. For example, this was one object in a list of many different objects (You could actually view the entire list (here)[https://origamitician.github.io/models/js/listofsubpages.js]):
 
 ```
 {
