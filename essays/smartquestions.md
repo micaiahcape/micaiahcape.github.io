@@ -13,16 +13,17 @@ labels:
 
 As a student office assistant, one of the most annoying things that I come across are “bad emails”. Most emails I read as part of my job are “nonlazy” (e.g. people asking when they can come over to pick up packages, or graduate school applicants clarifying a specific requirement on their application). These “nonlazy emails” have something in common – they are very specific, direct, and is obvious that they have tried to obtain information about the inquiry beforehand. I’m not trying to imply you should email someone only when there is a specific problem, but the sheer number of “lazy” emails I’ve received made me realize that there is a line between “smart questions” in nonlazy emails, and “non smart questions” in lazy emails. For example, many of the “non smart” I received are as follows:
  
-> Hi, I am interested to applying to your program. Can you send me the relevant information?
+```Hi, I am interested to applying to your program. Can you send me the relevant information?```
 
-> Hi, my name is (name) and I’m applying to (program). I would like to study at your institution only if you can give me full scholarship.
+```Hi, my name is (name) and I’m applying to (program). I would like to study at your institution only if you can give me full scholarship.```
 
-> Hi, I am transferring to your program via (fellowship). I want to know what kind of degrees you offer and the admission requirements (including materials). Can we set up a zoom call?
+```Hi, I am transferring to your program via (fellowship). I want to know what kind of degrees you offer and the admission requirements (including materials). Can we set up a zoom call?```
 
 In comparison, here is a “smart” question. This is like a breath of fresh air.
 
-> My name is (name) and I’m interested in studying (degree name) at UH Manoa. Regarding (application requirement), I have followed the instructions on your website, filling out the relevant fields. However, when I get to this field, the course I took does not show up. I’ve checked the website, and it says nothing about courses that don’t show up. A screenshot is below. Please let me know what I should do in this case.
+```My name is (name) and I’m interested in studying (degree name) at UH Manoa. Regarding (application requirement), I have followed the instructions on your website, filling out the relevant fields. However, when I get to this field, the course I took does not show up. I’ve checked the website, and it says nothing about courses that don’t show up. A screenshot is below. Please let me know what I should do in this case.
 (screenshot)
+```
 
 ## The application to software engineering
 
