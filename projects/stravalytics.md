@@ -16,14 +16,26 @@ Stravalytics is a web application that I built where users can connect their Str
 
 You can view the site here: [stravalytics.cyclic.cloud](https://stravalytics.cyclic.cloud/)
 
-## How it works
-A user connects their Strava account, and a call is made to the Strava API to retrieve all their activities. Once a user connects their Strava account, LocalStorage and MongoDB is used to keep them "logged in" to prevent them from having to connect their Strava account again (unless they decide to "logout" and disconnect it). When the API returns back the data, it is sorted and displayed in many different visualizations. Users can tinker with the numbers, such as displaying different variables, filtering displayed activities out by date, or changing the zoom on the visualizations.
+## How the application works
+A user connects their Strava account, and a call is made to the Strava API to retrieve all their activities (greatly simplified; see how authentication works in the next section). Once a user connects their Strava account, LocalStorage and MongoDB is used to keep them "logged in" to prevent them from having to connect their Strava account again (unless they decide to "logout" and disconnect it). When the API returns back the data, it is sorted and displayed in many different visualizations. Users can tinker with the numbers, such as displaying different variables, filtering displayed activities out by date, or changing the zoom on the visualizations.
 
-## Technical details
+## How authentication works
+
+### The short version
+
+1. Obtain authorization code by connecting Stravalytics to Strava.
+2. Make an API call to strava using this authorization code. A `refreshToken` is returned.
+3a. If the returned `refreshToken` does not exist in database, create new document with a unique user ID and `refreshToken`. Store `refreshToken` in `localStorage`.
+3b. If the returned `refreshToken` exists in database, simply store `refreshToken` in `localStorage`.
+4. Make an API call to Strava using `refreshToken`. This returns an `accessToken`.
+5. Stravalytics finally makes more API calls using the `accessToken` to get users' activities.
+
+### The long version
+
 The Strava API has two components that are required to get an athlete's data: a `refreshToken` and `accessToken`. `accessToken` is a temporary (short-lived) string used to retrieve the user's data, and `refreshToken` is a string that generates `accessToken`s. When a user connects Stravalytics with their Strava account, the user is redirected to Strava's login page, where they must input their Strava email and password. Upon successful authentication, the user is redirected back to Stravalytics with an authorization code in the URL. It looks like this:
 
 ```
-https://stravalytics.cyclic.cloud/?state=**&code=bdd55c5743cea421e334fef3f168cd5372ffa433**&scope=read,activity:read_all
+https://stravalytics.cyclic.cloud/?state=&code=bdd55c5743cea421e334fef3f168cd5372ffa433&scope=read,activity:read_all
 ```
 
 Automatically, the application makes an API call to the Strava API call with the code `bdd55c5743cea421e334fef3f168cd5372ffa433` (in this example). The API call from Strava returns the user's account information, such as name and their `refreshToken`.
@@ -40,7 +52,7 @@ When the obtained refreshToken can't be found in the database, it means that a n
 
 A second API call is made to Strava with the `refreshToken`, and an `accessToken` is obtained. 
 
-Using the obtained `accessToken`, the application finally starts calling the Strava API to get the user's activities.
+Using the obtained `accessToken`, the application finally starts calling the Strava API to get the user's activities
 
 ## Stravalytics currently has the following visualizations:
 <img class="img-fluid" width = "30%" src="../img/stravalytics.png">
