@@ -25,10 +25,10 @@ A user connects their Strava account, and a call is made to the Strava API to re
 
 1. Obtain authorization code by connecting Stravalytics to Strava.
 2. Make an API call to strava using this authorization code. A `refreshToken` is returned.
-3a. If the returned `refreshToken` does not exist in database, create new document with a unique user ID and `refreshToken`. Store `refreshToken` in `localStorage`.
-3b. If the returned `refreshToken` exists in database, simply store `refreshToken` in `localStorage`.
-4. Make an API call to Strava using `refreshToken`. This returns an `accessToken`.
-5. Stravalytics finally makes more API calls using the `accessToken` to get users' activities.
+3. If the returned `refreshToken` does not exist in database, create new document with a unique user ID and `refreshToken`. Store `refreshToken` in `localStorage`.
+4. If the returned `refreshToken` exists in database, simply store `refreshToken` in `localStorage`.
+5. Make an API call to Strava using `refreshToken`. This returns an `accessToken`.
+6. Stravalytics finally makes more API calls using the `accessToken` to get users' activities.
 
 ### The long version
 
