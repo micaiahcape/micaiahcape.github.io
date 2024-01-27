@@ -80,6 +80,11 @@ This allowed processing & filtering to happen on the backend, and once the data 
 
 On the other hand, the "complex" criteria were processed by obtaining the entire MongoDB database via single API call, and processing it on the frontend (due to need for computation). No processing occurred in the backend. 
 
+## Challenges
+**Learning React**. This was my first project I used React.js for, and it had a steep learning curve, such as using functional and class-based components. I especially had a lot of trouble with setting `State` to the data recieved by the API calls, and it took multiple tries to make the application not jittery.
+
+**Linking frontend with backend.** This was also my first fullstack application. Initially, I had two folders in my project: `/api` and `/client`. `/client` was where all the React components were stored, and `/api` was where my API code was stored. However, no amount of troubleshooting would allow me to make an API call to the code in the `/api` folder from the `/client` folder when developing locally. Thus, I ended up copying the `/api` folder into another separate project, and deployed that standalone API on Heroku. I was then able to successfully call the API from the `/client` folder now that they were in two separate projects.
+
 ## Images
 
 <img width = "30%" src="../img/pitchkeys_mongodb.png">
