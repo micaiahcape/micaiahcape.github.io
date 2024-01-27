@@ -9,15 +9,38 @@ labels:
   - JavaScript
   - Node.js
   - MongoDB
-summary: "A web application that allows you to view your Strava (a fitness tracker) activities in great detail via different visualizations."
+summary: "A web application that allows you to view your Strava (a fitness tracker) data in great detail via different visualizations."
 ---
 ## How to use
-Stravalytics is a web application that I built where users can analyze their running data in detail. When on the site, simply connect the "Connect to Strava" button to link your Strava accounts, and see your statistics via beautiful visualizations!
+Stravalytics is a web application that I built where users can connect their Strava (a fitness app) and analyze their running data in detail. When on the site, simply connect the "Connect to Strava" button to link your Strava accounts, and see your statistics via beautiful visualizations!
 
 You can view the site here: [stravalytics.cyclic.cloud](https://stravalytics.cyclic.cloud/)
 
 ## How it works
 A user connects their Strava account, and a call is made to the Strava API to retrieve all their activities. Once a user connects their Strava account, LocalStorage and MongoDB is used to keep them "logged in" to prevent them from having to connect their Strava account again (unless they decide to "logout" and disconnect it). When the API returns back the data, it is sorted and displayed in many different visualizations. Users can tinker with the numbers, such as displaying different variables, filtering displayed activities out by date, or changing the zoom on the visualizations.
+
+## Technical details
+The Strava API has two components that are required to get an athlete's data: a `refreshToken` and `accessToken`. `accessToken` is a temporary (short-lived) string used to retrieve the user's data, and `refreshToken` is a string that generates `accessToken`s. When a user connects Stravalytics with their Strava account, the user is redirected to Strava's login page, where they must input their Strava email and password. Upon successful authentication, the user is redirected back to Stravalytics with an authorization code in the URL. It looks like this:
+
+```
+https://stravalytics.cyclic.cloud/?state=**&code=bdd55c5743cea421e334fef3f168cd5372ffa433**&scope=read,activity:read_all
+```
+
+Automatically, the application makes an API call to the Strava API call with the code `bdd55c5743cea421e334fef3f168cd5372ffa433` (in this example). The API call from Strava returns the user's account information, such as name and their `refreshToken`.
+
+The application stores unique user IDs and `refreshToken`s in a mongoDB database. 
+
+```
+_id: 64e1c5ae2dc716ba9e33e3f2 // unique user ID
+refreshToken: "34900da21faf4931efbd143c32b437a5812b383f" // refresh token
+__v: 0
+```
+
+When the obtained refreshToken can't be found in the database, it means that a new user is trying to connect their account. Thus, a new document is created in MongoDB, with a randomly generated unique user ID and their `refreshToken`. This randomly generated user ID is also stored in browser `localStorage` so that a user can "stay logged in." In other words, when a user closes the tab and returns to the website, the user ID in `localStorage` can be used to find a mongoDB document containing their `refreshToken`.
+
+A second API call is made to Strava with the `refreshToken`, and an `accessToken` is obtained. 
+
+Using the obtained `accessToken`, the application finally starts calling the Strava API to get the user's activities.
 
 ## Stravalytics currently has the following visualizations:
 <img class="img-fluid" width = "30%" src="../img/stravalytics.png">
