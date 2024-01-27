@@ -4,7 +4,7 @@ type: project
 image: img/virus.png
 title: "Virus"
 date: 2022-03-01
-published: true
+published: false
 labels:
   - JavaScript
   - HTML
