@@ -12,7 +12,7 @@ labels:
 ### My experiences (dreadful)
 I was first introduced to the ESlint JavaScript coding standards during my summer internship at the Hawaii Digital Health Lab. The GitHub repository I was committing to was running ESlint checks on every commit, and one day it the commit had that dreaded red X button next to it instead of the green checkmark. Curious to see why this happened, I clicked the commit information and was greeted a page with so much red error text that could make a Java stack trace look like nothing. I realized that nothing in the code actually “broke” functionally (i.e. there were no bugs), so I just left it as is. Looking back on it now, this red error text was all the ESlint errors I was producing as I was coding along.
 
-<img width="50%" class="rounded pe-4" src="../img/eslint_hell.png">
+<img width="50%" class="rounded pe-4" src="../img/eslint_hell.png"><br>
 ESLint fixing hell during internship. Close to 3000 insertions + deletions in a single commit!<br><br>
 
 I was made aware of this when my other coworker pointed out and explained to me the ESlint coding standard. I then took on the painful task of fixing the more than 1000 ESlint errors I created. Most of these were fixable by `eslint –fix` however some of them, such as line length, were extremely annoying. Most of the time, I’d get down to 1 or 2 ESlint errors on each file that could not be fixed no matter what I did. Out of desperation, I’d put the ESlint ignore comments before them in a low effort to mask these errors. As a creative person, these ESlint errors felt suffocating. After typing out a simple function, the IDE would have a seizure and vomit out red underlines all over the place, all in an attempt to convince me I was typing in something illegal like a nuke launch code. 
@@ -31,7 +31,7 @@ Because of this, it is easy to hunt for certain things in the code by taking adv
 ### However… I don’t like the enforcement.
 While I like coding standards, I don’t like how they’re enforced. The rules can become extremely cumbersome and long to read. For example, Hola, a VPN company, literally has multiple pages on coding standards regarding the tiniest of details!
 
-<img width="50%" class="rounded pe-4" src="../img/hola_coding_standard.png">
+<img width="50%" class="rounded pe-4" src="../img/hola_coding_standard.png"><br>
 Note the many examples on the side bar. Worse yet, take a look at how small that scrollbar is!<br><br>
 
 There are hundreds of examples on those pages, and I do not see how people commit these to memory unless through extensive exposure to the company’s codebase. This is where code checking tools come in, like ESlint. In my opinion, ESlint is a great concept that forces the programmer to write code that is up to standard; however, I feel it can be a little bit intrusive. As I’ve mentioned above:
