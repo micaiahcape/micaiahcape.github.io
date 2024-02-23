@@ -26,7 +26,45 @@ These UI frameworks alleviate this issue by providing a lot of simplified code t
 
 Much of my satisfaction from coding comes from the physical action of typing out code on my keyboard and seeing the results come out, such as creating a navbar or a line graph from scratch. This is because I get to fine-tune the tiniest things to my own liking, and it gives me a sense of ownership and control over my project. Thus, I’m not really a fan of libraries / frameworks that offer templates or easy-to-use development tools, as I feel like I’m injecting some code that other people wrote for me, and the templates feel extremely restricting. The action of copying and pasting template code and slapping a few pre-made classes does not feel exciting nor natural to me.
 
-Bootstrap seems to have this problem. I have a feeling that most of my “Bootstrap hate” is fueled by how it was introduced in class – we had to create a mockup of a website purely with Bootstrap, and if I remember correctly, we had to keep custom CSS to a minimum. This lead me to get stuck with the limited options Bootstrap offered for padding, margins, column size, flexbox layout, and a whole slew of other CSS properties. I was not enjoying this process at all and felt like I could have arrived at a much better and enjoyable result using custom CSS entirely. For example, sticking the website logo, menu options, and search bar inside a nav was a nightmare in terms of sizing, and could have been avoided using a flexbox and customizing the width of each element. 
+Bootstrap seems to have this problem. I have a feeling that most of my “Bootstrap hate” is fueled by how it was introduced in class – we had to create a mockup of a website purely with Bootstrap, and if I remember correctly, we had to keep custom CSS to a minimum. This lead me to get stuck with the limited options Bootstrap offered for padding, margins, column size, flexbox layout, and a whole slew of other CSS properties. I was not enjoying this process at all and felt like I could have arrived at a much better and enjoyable result using custom CSS entirely. For example, sticking the website logo, menu options, and search bar inside a nav was a nightmare in terms of sizing, and could have been avoided using a flexbox and customizing the width of each element. Similar issues were encountered when designing the page body.
+
+For example this was the page body with Bootstrap. I'm probaby using it the wrong way, but all these nested divs were messy! All I needed was at most 2-3 levels of nesting as I need a parent div to hold two child divs and display them as `flex`. Instead I ended up with this:
+
+```
+<div id = "introMsgHolder" class = "container-fluid row  px-5">
+  <div id = "introMsgPadding" class = "row w-100">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
+      <h1 class="mt-0 mb-5">Create stories, games, and animations <br>Share with others around the world</h1>
+      <div class = "row w-75">
+        <div class="col-sm-5">
+          <button type="button" class="btn btn-light"><h5 class = 'btnTxt'><i class="bi bi-stars"></i> Start Creating</h5></button>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-light"><h5 class = 'btnTxt'><i class="bi bi-lightning-fill"></i> Join</h5></button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="col-sm-4 align-items-center">
+      <div class="row mb-3">
+        <div class="col-sm-1"></div>
+        <div class="embed-responsive embed-responsive-16by9 col-sm-10">
+          <iframe src="https://www.youtube.com/embed/-Pg819il8lY" title="1 Minute of Blank Screen (HD 720p)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+
+      <div class = "row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6"><button type="button" class="btn btn-light w-100 btnTxt">Watch Video</button></div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ### Bootstrap still gets things done, and that's its redeeming quality.
 
