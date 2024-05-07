@@ -51,10 +51,12 @@ No AI used while answering a question either in person or digitally; I tried to 
 
 As mentioned above, I did not reply to a single smart-question. There was one smart question I asked about committing environment variables in plaintext to GitHub for the final project. I did not ask AI this question, as that was the last thing on my mind. Curious, I just asked ChatGPT this question as I was writing this essay, and this is what it spit out:
 
-Prompt: `can you commit environment variables in plaintext to github. If not, how will users access the application when they clone it?`
+Prompt: 
+```can you commit environment variables in plaintext to github. If not, how will users access the application when they clone it?```
 
-Output (trimmed): ` Provide Documentation: Include clear documentation in your repository's README file or in a separate document explaining how users can set up their environment variables.
-Configuration Management: If your application is deployed to a server or a cloud platform, such as Heroku or AWS, you can often set environment variables directly in their respective dashboards or CLI tools.`
+Output (trimmed): 
+``` Provide Documentation: Include clear documentation in your repository's README file or in a separate document explaining how users can set up their environment variables.
+Configuration Management: If your application is deployed to a server or a cloud platform, such as Heroku or AWS, you can often set environment variables directly in their respective dashboards or CLI tools.````
 
 This gave me an idea to share the environment variable amongst my team members and not commit it to plaintext to GitHub. In fact, when a team member pulls from the repository, they are responsible for editing the environment variable locally, so the application works during development. Once the site is deployed on digital ocean, we will manually set the environment variables, as ChatGPT suggested.
 
