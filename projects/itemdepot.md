@@ -51,10 +51,12 @@ this.schema = new SimpleSchema({
 The image of the lost item form is below, as well as an image of a Card that displays the lost item.
 ```
 
-<img width = "50%" src="../img/itemdepot_lostitemcard.png"><br>
+<img width = "50%" src="../img/itemdepot_lostitemform.png"><br>
 Lost item form that users can fill out.
 <br><br>
-<img width = "50%" src="../img/itemdepot_lostitemcard.png"><br>
+
+
+<img width = "25%" src="../img/itemdepot_lostitemcard.png"><br>
 An example card showing all the information that the user submits.
 <br><br>
 
@@ -64,10 +66,10 @@ When another visitor has found the item, they can click the green "I found this 
  - Any information that the finder left about the status of the item, or their contact information
  - A button that takes you to back to the Item Depot site to "resolve" the item (take it off the site to prevent confusion).
 
-<img width = "50%" src="../img/itemdepot_lostitemcontactform.png"><br>
+<img width = "35%" src="../img/itemdepot_lostitemcontactform.png"><br>
 Contact form that the finder fills out.
 <br><br>
-<img width = "70%" src="../img/itemdepot_lostitememail.png"><br>
+<img width = "50%" src="../img/itemdepot_lostitememail.png"><br>
 Email that Micaiah Cape, the person who lost the item, receives when the contact form is filled out.
 <br><br>
 
