@@ -10,8 +10,7 @@
     "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
     "profiles": [
       { "network": "github", "username": "micaiahcape", "url": "http://github.com/micaiahcape" },
-      { "network": "linkedin", "username": "Micaiah Cape", "url": "http://linkedin.com/in/infigral" },
-      { "network": "instagram", "username": "notmicaiah_26", "url": "http://instagram.com/notmicaiah_26" }
+      { "network": "linkedin", "username": "Micaiah Cape", "url": "http://linkedin.com/in/infigral" }
     ]
   },
   "interests": [
@@ -22,7 +21,7 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "JavaScript", "Node.js", "React.js", "MongoDB", "C/C++"]
+      "keywords": [ "JavaScript", "Node.js", "React.js", "MongoDB", "C/C++", "Python", "Bash shell script" ]
     },
     {
       "name": "Toolsets/OS",
@@ -38,7 +37,8 @@
       "endDate": "Present",
       "courses": [
         "ICS 212",
-        "ICS 311"
+        "ICS 311",
+        "ICS 314"
       ]
     }
   ],
