@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/pitchkeyslogo.jpg
+image: https://www.hillelementary.com/wp-content/uploads/2019/01/Lost-and-Found.jpg
 title: "Item Depot"
 date: 2023-05-10
 published: true
