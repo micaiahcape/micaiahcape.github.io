@@ -4,7 +4,7 @@ type: essay
 title: "Dorm room rater with a side of roommate finding"
 # All dates must be YYYY-MM-DD format!
 date: 2024-03-28
-published: true
+published: false
 labels:
   - Bootstrap
 ---
