@@ -1,4 +1,4 @@
-`---
+---
 layout: essay
 type: essay
 title: "314: The end of an era"
@@ -21,7 +21,7 @@ Thus, learning about the entire software development process in 314 was such a g
 
 # Design Patterns 
 
-Design patterns are evident everywhere outside of software. The [essay that I wrote on design patterns](link) showcases the striking differences between Chrome and Edge’s UI. It is evident that the developers or UI/UX designers followed completely different design patterns when creating. Not much detail is presented in this essay, but in the essay I talked about how Chrome’s UI was better sectioned off and had more generous whitespace, making it much easier to navigate. Outside of browsers or other web-related projects, design patterns can help with other digital media. For example, there are unwritten sets of rules on what not to do on your PowerPoint presentation. Some rules may include:
+Design patterns are evident everywhere outside of software. The [essay that I wrote on design patterns](https://micaiahcape.github.io/essays/designpatterns.html) showcases the striking differences between Chrome and Edge’s UI. It is evident that the developers or UI/UX designers followed completely different design patterns when creating. Not much detail is presented in this essay, but in the essay I talked about how Chrome’s UI was better sectioned off and had more generous whitespace, making it much easier to navigate. Outside of browsers or other web-related projects, design patterns can help with other digital media. For example, there are unwritten sets of rules on what not to do on your PowerPoint presentation. Some rules may include:
 
 1. No fonts below X size. '
 2. Place images and other visuals on slides, the fewer words the better. 

@@ -4,7 +4,7 @@ type: essay
 title: "My love hate relationship with Bootstrap"
 # All dates must be YYYY-MM-DD format!
 date: 2024-02-22
-published: true
+published: false
 labels:
   - Bootstrap
 ---
